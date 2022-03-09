@@ -14,14 +14,15 @@
 				<hotel_rooms>
 					<rooms_count>2</rooms_count>
 					<feed>false</feed>
-					<tvset>true</tvset> 
+					<tvset>true</tvset>
 					<conditioner>true</conditioner>
 				</hotel_rooms>
 			</hotel>
 		</hotel_characteristic>
 		<cost>1000</cost>
 	</holiday>
-	<holiday advertisement="temporarily suspended" company_code="900256369">
+	<holiday advertisement="temporarily suspended"
+		company_code="900256369">
 		<company>Paradise</company>
 		<country>Egypt</country>
 		<days_number>7</days_number>
@@ -118,7 +119,8 @@
 		<path_type>open sea</path_type>
 		<cost>2000</cost>
 	</cruise>
-	<cruise advertisement="temporarily suspended" company_code="1145214">
+	<cruise advertisement="temporarily suspended"
+		company_code="1145214">
 		<company>Ocean drive</company>
 		<country>None</country>
 		<days_number>31</days_number>
@@ -198,7 +200,8 @@
 		<excursion>true</excursion>
 		<cost>350</cost>
 	</weekend>
-	<weekend advertisement="temporarily suspended" company_code="45888413">
+	<weekend advertisement="temporarily suspended"
+		company_code="45888413">
 		<company>Dream</company>
 		<country>Germany</country>
 		<days_number>5</days_number>
