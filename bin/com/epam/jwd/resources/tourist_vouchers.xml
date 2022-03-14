@@ -2,323 +2,361 @@
 <tourist_vouchers
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="tourist_vouchers.xsd">
-	<holiday company_code="45678913">
+
+	<holiday tour_code="a1111111">
 		<company>Dream</company>
 		<country>Turkey</country>
+		<tour_date>2022-06</tour_date>
 		<days_number>10</days_number>
 		<transport>plain</transport>
-		<hotel_characteristic>
+		<hotels>
 			<hotel>
 				<hotel_name>Visit</hotel_name>
 				<srtars_number>4</srtars_number>
-				<hotel_rooms>
-					<rooms_count>2</rooms_count>
-					<feed>false</feed>
-					<tvset>true</tvset>
-					<conditioner>true</conditioner>
-				</hotel_rooms>
+				<rooms_count>2</rooms_count>
+				<feed>false</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
 			</hotel>
-		</hotel_characteristic>
-		<cost>1000</cost>
-	</holiday>
-	<holiday advertisement="temporarily suspended"
-		company_code="900256369">
-		<company>Paradise</company>
-		<country>Egypt</country>
-		<days_number>7</days_number>
-		<transport>plain</transport>
-		<hotel_characteristic>
 			<hotel>
 				<hotel_name>Voyage</hotel_name>
 				<srtars_number>5</srtars_number>
-				<hotel_rooms>
-					<rooms_count>3</rooms_count>
-					<feed>true</feed>
-					<tvset>true</tvset>
-					<conditioner>true</conditioner>
-				</hotel_rooms>
+				<rooms_count>3</rooms_count>
+				<feed>HB</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
 			</hotel>
-		</hotel_characteristic>
+		</hotels>
+		<cost>1300</cost>
+	</holiday>
+	<holiday advertisement="temporarily suspended"
+		tour_code="a2222222">
+		<company>Paradise</company>
+		<country>Egypt</country>
+		<tour_date>2022-06</tour_date>
+		<days_number>7</days_number>
+		<transport>plain</transport>
+		<hotels>
+			<hotel>
+				<hotel_name>Voyage</hotel_name>
+				<srtars_number>5</srtars_number>
+				<rooms_count>3</rooms_count>
+				<feed>BB</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
+			</hotel>
+		</hotels>
 		<cost>2000</cost>
 	</holiday>
-	<holiday company_code="58961466">
+	<holiday tour_code="a33333333">
 		<company>Vice City</company>
 		<country>America</country>
+		<tour_date>2022-06</tour_date>
 		<days_number>15</days_number>
 		<transport>plain</transport>
-		<hotel_characteristic>
+		<hotels>
 			<hotel>
 				<hotel_name>Luxor</hotel_name>
 				<srtars_number>5</srtars_number>
-				<hotel_rooms>
-					<rooms_count>3</rooms_count>
-					<feed>true</feed>
-					<tvset>true</tvset>
-					<conditioner>true</conditioner>
-				</hotel_rooms>
+				<rooms_count>3</rooms_count>
+				<feed>HB</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
 			</hotel>
-		</hotel_characteristic>
-		<cost>2500</cost>
+		</hotels>
+		<cost>1600</cost>
 	</holiday>
-	<holiday company_code="566666666">
+	<holiday tour_code="a4444444">
 		<company>Dream</company>
 		<country>France</country>
+		<tour_date>2022-06</tour_date>
 		<days_number>10</days_number>
 		<transport>bus</transport>
-		<hotel_characteristic>
+		<hotels>
 			<hotel>
 				<hotel_name>Visit</hotel_name>
 				<srtars_number>4</srtars_number>
-				<hotel_rooms>
-					<rooms_count>2</rooms_count>
-					<feed>false</feed>
-					<tvset>true</tvset>
-					<conditioner>true</conditioner>
-				</hotel_rooms>
+				<rooms_count>2</rooms_count>
+				<feed>AI</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
 			</hotel>
-		</hotel_characteristic>
-		<cost>1500</cost>
+		</hotels>
+		<cost>1560</cost>
 	</holiday>
-	<cruise company_code="488484984">
+	<cruise advertisement="temporarily suspended"
+		tour_code="a555555">
 		<company>Ocean drive</company>
 		<country>America</country>
+		<tour_date>2022-06</tour_date>
 		<days_number>25</days_number>
 		<transport>ship</transport>
-		<hotel_characteristic>
+		<hotels>
 			<hotel>
 				<hotel_name>Titanic</hotel_name>
 				<srtars_number>5</srtars_number>
-				<hotel_rooms>
-					<rooms_count>2</rooms_count>
-					<feed>true</feed>
-					<tvset>true</tvset>
-					<conditioner>true</conditioner>
-				</hotel_rooms>
+				<rooms_count>2</rooms_count>
+				<feed>HB</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
 			</hotel>
-		</hotel_characteristic>
-		<path_type>border</path_type>
-		<cost>1500</cost>
-	</cruise>
-	<cruise company_code="899887777">
-		<company>Ocean drive</company>
-		<country>India</country>
-		<days_number>25</days_number>
-		<transport>ship</transport>
-		<hotel_characteristic>
 			<hotel>
 				<hotel_name>Glory</hotel_name>
 				<srtars_number>4</srtars_number>
-				<hotel_rooms>
-					<rooms_count>2</rooms_count>
-					<feed>true</feed>
-					<tvset>true</tvset>
-					<conditioner>true</conditioner>
-				</hotel_rooms>
+				<rooms_count>2</rooms_count>
+				<feed>AI</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
 			</hotel>
-		</hotel_characteristic>
-		<path_type>open sea</path_type>
-		<cost>2000</cost>
+		</hotels>
+		<cost>4000</cost>
 	</cruise>
-	<cruise advertisement="temporarily suspended"
-		company_code="1145214">
+	<cruise tour_code="a666666">
 		<company>Ocean drive</company>
 		<country>None</country>
+		<tour_date>2022-06</tour_date>
 		<days_number>31</days_number>
 		<transport>ship</transport>
-		<hotel_characteristic>
+		<hotels>
 			<hotel>
 				<hotel_name>Rock</hotel_name>
 				<srtars_number>5</srtars_number>
-				<hotel_rooms>
-					<rooms_count>2</rooms_count>
-					<feed>true</feed>
-					<tvset>true</tvset>
-					<conditioner>true</conditioner>
-				</hotel_rooms>
+				<rooms_count>2</rooms_count>
+				<feed>AI</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
 			</hotel>
-		</hotel_characteristic>
-		<path_type>through the ocean</path_type>
-		<cost>3000</cost>
+		</hotels>
+		<cost>2000</cost>
 	</cruise>
-	<cruise company_code="1145214">
+	<cruise tour_code="b1111111">
+		<company>Ocean drive</company>
+		<country>None</country>
+		<tour_date>2022-06</tour_date>
+		<days_number>31</days_number>
+		<transport>ship</transport>
+		<hotels>
+			<hotel>
+				<hotel_name>Rock</hotel_name>
+				<srtars_number>5</srtars_number>
+				<rooms_count>2</rooms_count>
+				<feed>AI</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
+			</hotel>
+			<hotel>
+				<hotel_name>Wave</hotel_name>
+				<srtars_number>5</srtars_number>
+				<rooms_count>3</rooms_count>
+				<feed>AI</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
+			</hotel>
+		</hotels>
+		<cost>7400</cost>
+	</cruise>
+	<cruise tour_code="b2222222">
 		<company>Sea vice</company>
 		<country>Egypt</country>
+		<tour_date>2022-06</tour_date>
 		<days_number>14</days_number>
 		<transport>ship</transport>
-		<hotel_characteristic>
+		<hotels>
 			<hotel>
 				<hotel_name>Bob</hotel_name>
 				<srtars_number>4</srtars_number>
-				<hotel_rooms>
-					<rooms_count>1</rooms_count>
-					<feed>true</feed>
-					<tvset>true</tvset>
-					<conditioner>true</conditioner>
-				</hotel_rooms>
+				<rooms_count>1</rooms_count>
+				<feed>true</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
 			</hotel>
-		</hotel_characteristic>
-		<path_type>border</path_type>
-		<cost>1500</cost>
+		</hotels>
+		<cost>2000</cost>
 	</cruise>
-	<weekend company_code="46548889">
+	<weekend tour_code="a1236456">
 		<company>Dream</company>
 		<country>France</country>
+		<tour_date>2022-06</tour_date>
 		<days_number>4</days_number>
 		<transport>bus</transport>
-		<hotel_characteristic>
+		<hotels>
 			<hotel>
 				<hotel_name>Aramis</hotel_name>
 				<srtars_number>3</srtars_number>
-				<hotel_rooms>
-					<rooms_count>1</rooms_count>
-					<feed>false</feed>
-					<tvset>true</tvset>
-					<conditioner>false</conditioner>
-				</hotel_rooms>
+				<rooms_count>1</rooms_count>
+				<feed>BB</feed>
+				<tvset>true</tvset>
+				<conditioner>false</conditioner>
 			</hotel>
-		</hotel_characteristic>
-		<excursion>flase</excursion>
-		<cost>300</cost>
+			<hotel>
+				<hotel_name>Artos</hotel_name>
+				<srtars_number>3</srtars_number>
+				<rooms_count>1</rooms_count>
+				<feed>BB</feed>
+				<tvset>false</tvset>
+				<conditioner>true</conditioner>
+			</hotel>
+		</hotels>
+		<cost>700</cost>
+		<excursion>false</excursion>
 	</weekend>
-	<weekend company_code="11518889">
+	<weekend advertisement="temporarily suspended"
+		tour_code="a6565666">
 		<company>Dream</company>
 		<country>Belgium</country>
+		<tour_date>2022-06</tour_date>
 		<days_number>3</days_number>
 		<transport>bus</transport>
-		<hotel_characteristic>
+		<hotels>
 			<hotel>
 				<hotel_name>Abracadabra</hotel_name>
 				<srtars_number>4</srtars_number>
-				<hotel_rooms>
-					<rooms_count>2</rooms_count>
-					<feed>true</feed>
-					<tvset>true</tvset>
-					<conditioner>false</conditioner>
-				</hotel_rooms>
+				<rooms_count>2</rooms_count>
+				<feed>BB</feed>
+				<tvset>true</tvset>
+				<conditioner>false</conditioner>
 			</hotel>
-		</hotel_characteristic>
+		</hotels>
+		<cost>600</cost>
 		<excursion>true</excursion>
-		<cost>350</cost>
 	</weekend>
-	<weekend advertisement="temporarily suspended"
-		company_code="45888413">
+	<weekend tour_code="a32166544">
 		<company>Dream</company>
 		<country>Germany</country>
+		<tour_date>2022-06</tour_date>
 		<days_number>5</days_number>
 		<transport>bus</transport>
-		<hotel_characteristic>
+		<hotels>
 			<hotel>
 				<hotel_name>Berlin</hotel_name>
 				<srtars_number>5</srtars_number>
-				<hotel_rooms>
-					<rooms_count>3</rooms_count>
-					<feed>true</feed>
-					<tvset>true</tvset>
-					<conditioner>true</conditioner>
-				</hotel_rooms>
+				<rooms_count>3</rooms_count>
+				<feed>BB</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
 			</hotel>
-		</hotel_characteristic>
+		</hotels>
+		<cost>800</cost>
 		<excursion>true</excursion>
-		<cost>500</cost>
 	</weekend>
-	<weekend company_code="88899999">
+	<weekend tour_code="b656566">
 		<company>Dream</company>
 		<country>Poland</country>
+		<tour_date>2022-06</tour_date>
 		<days_number>7</days_number>
 		<transport>bus</transport>
-		<hotel_characteristic>
+		<hotels>
 			<hotel>
 				<hotel_name>Krakow</hotel_name>
 				<srtars_number>4</srtars_number>
-				<hotel_rooms>
-					<rooms_count>1</rooms_count>
-					<feed>false</feed>
-					<tvset>true</tvset>
-					<conditioner>true</conditioner>
-				</hotel_rooms>
+				<rooms_count>1</rooms_count>
+				<feed>false</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
 			</hotel>
-		</hotel_characteristic>
-		<excursion>flase</excursion>
-		<cost>400</cost>
+			<hotel>
+				<hotel_name>Visit</hotel_name>
+				<srtars_number>4</srtars_number>
+				<rooms_count>2</rooms_count>
+				<feed>BB</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
+			</hotel>
+		</hotels>
+		<cost>1300</cost>
+		<excursion>false</excursion>
 	</weekend>
-	<pilgrimage company_code="599999877">
+	<pilgrimage advertisement="temporarily suspended"
+		tour_code="d5454545">
 		<company>Enjoy the moment</company>
 		<country>Poland</country>
+		<tour_date>2022-06</tour_date>
 		<days_number>7</days_number>
 		<transport>bus</transport>
-		<hotel_characteristic>
+		<hotels>
 			<hotel>
 				<hotel_name>Krakow</hotel_name>
 				<srtars_number>4</srtars_number>
-				<hotel_rooms>
-					<rooms_count>1</rooms_count>
-					<feed>false</feed>
-					<tvset>true</tvset>
-					<conditioner>true</conditioner>
-				</hotel_rooms>
+				<rooms_count>1</rooms_count>
+				<feed>BB</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
 			</hotel>
-		</hotel_characteristic>
-		<excursion>true</excursion>
-		<cost>360</cost>
-	</pilgrimage>
-	<pilgrimage company_code="8989787844">
-		<company>Enjoy the moment</company>
-		<country>Russia</country>
-		<days_number>3</days_number>
-		<transport>bus</transport>
-		<hotel_characteristic>
 			<hotel>
 				<hotel_name>Karelia</hotel_name>
 				<srtars_number>2</srtars_number>
-				<hotel_rooms>
-					<rooms_count>1</rooms_count>
-					<feed>false</feed>
-					<tvset>flase</tvset>
-					<conditioner>true</conditioner>
-				</hotel_rooms>
+				<rooms_count>1</rooms_count>
+				<feed>BB</feed>
+				<tvset>flase</tvset>
+				<conditioner>true</conditioner>
 			</hotel>
-		</hotel_characteristic>
-		<excursion>flase</excursion>
-		<cost>150</cost>
+		</hotels>
+		<cost>1300</cost>
+		<excursion>true</excursion>
 	</pilgrimage>
-	<pilgrimage company_code="255484889">
+	<pilgrimage tour_code="d785859699">
 		<company>Dream</company>
 		<country>Belarus</country>
+		<tour_date>2022-06</tour_date>
 		<days_number>2</days_number>
 		<transport>bus</transport>
-		<hotel_characteristic>
+		<hotels>
 			<hotel>
 				<hotel_name>Naroch</hotel_name>
 				<srtars_number>2</srtars_number>
-				<hotel_rooms>
-					<rooms_count>1</rooms_count>
-					<feed>false</feed>
-					<tvset>true</tvset>
-					<conditioner>false</conditioner>
-				</hotel_rooms>
+				<rooms_count>1</rooms_count>
+				<feed>BB</feed>
+				<tvset>true</tvset>
+				<conditioner>false</conditioner>
 			</hotel>
-		</hotel_characteristic>
-		<excursion>flase</excursion>
-		<cost>100</cost>
+		</hotels>
+		<cost>500</cost>
+		<excursion>true</excursion>
 	</pilgrimage>
-	<pilgrimage company_code="2223669997">
+	<pilgrimage tour_code="d55522666">
 		<company>Dream</company>
 		<country>Poland</country>
+		<tour_date>2022-06</tour_date>
 		<days_number>7</days_number>
 		<transport>bus</transport>
-		<hotel_characteristic>
+		<hotels>
 			<hotel>
 				<hotel_name>Krakow</hotel_name>
 				<srtars_number>4</srtars_number>
-				<hotel_rooms>
-					<rooms_count>1</rooms_count>
-					<feed>false</feed>
-					<tvset>true</tvset>
-					<conditioner>true</conditioner>
-				</hotel_rooms>
+				<rooms_count>1</rooms_count>
+				<feed>BB</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
 			</hotel>
-		</hotel_characteristic>
+		</hotels>
+		<cost>300</cost>
 		<excursion>true</excursion>
-		<cost>400</cost>
+	</pilgrimage>
+	<pilgrimage tour_code="d56565666">
+		<company>Top tour</company>
+		<country>China</country>
+		<tour_date>2022-06</tour_date>
+		<days_number>5</days_number>
+		<transport>bus</transport>
+		<hotels>
+			<hotel>
+				<hotel_name>Pekin</hotel_name>
+				<srtars_number>5</srtars_number>
+				<rooms_count>3</rooms_count>
+				<feed>True</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
+			</hotel>
+			<hotel>
+				<hotel_name>Panda</hotel_name>
+				<srtars_number>5</srtars_number>
+				<rooms_count>3</rooms_count>
+				<feed>BB</feed>
+				<tvset>true</tvset>
+				<conditioner>true</conditioner>
+			</hotel>
+		</hotels>
+		<cost>2000</cost>
+		<excursion>true</excursion>
 	</pilgrimage>
 </tourist_vouchers>

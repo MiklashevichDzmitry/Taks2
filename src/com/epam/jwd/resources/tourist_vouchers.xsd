@@ -1,118 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="tour.xsd">
-    <complexType name="candy-type">
-        <sequence>
-            <element name="name">
-                <simpleType>
-                    <restriction base="string">
-                        <minLength value="1"/>
-                        <maxLength value="25"/>
-                    </restriction>
-                </simpleType>
-            </element>
-            <element ref="production"/>
-            <element ref="expiration-date"/>
-            <element name="ingredients">
-                <complexType>
-                    <sequence>
-                        <element ref="ingredient" maxOccurs="unbounded"/>
-                    </sequence>
-                </complexType>
-            </element>
-            <element name="energy" type="positiveInteger"/>
-            <element ref="value"/>
-        </sequence>
-        <attribute name="vendor-code" type="ID" use="required"/>
-    </complexType>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+	xsi:noNamespaceSchemaLocation="tourist_vouchers.xsd">
 
-    <complexType name="caramel-candy-type">
-        <complexContent>
-            <extension base="candy-type">
-                <sequence>
-                    <element name="flavor" type="string"/>
-                    <element name="lollipop" type="boolean"/>
-                </sequence>
-            </extension>
-        </complexContent>
-    </complexType>
+	<complexType name="tour_type">
+		<sequence>
+			<element name="company">
+				<simpleType>
+					<restriction base="string">
+						<minLength value="1" />
+						<maxLength value="25" />
+					</restriction>
+				</simpleType>
+			</element>
+			<element name="country" />
+			<element ref="tour_date" />
+			<element name="days_number" />
+			<element ref="transport" />
+			<element name="hotels">
+				<complexType>
+					<sequence>
+						<element ref="hotel" maxOccurs="unbounded" />
+					</sequence>
+				</complexType>
+			</element>
+			<element name="cost" type="positiveInteger" />
+		</sequence>
+		<attribute name="tour_code" type="ID" use="required" />
+		<attribute name="advertisement" type="string" use="optional" />
+	</complexType>
 
-    <complexType name="chocolate-candy-type">
-        <complexContent>
-            <extension base="candy-type">
-                <sequence>
-                    <element ref="chocolate-type"/>
-                </sequence>
-                <attribute name="filling" type="string" use="optional" default="without"/>
-            </extension>
-        </complexContent>
-    </complexType>
+	<complexType name="holiday_tour_type">
+		<complexContent>
+			<extension base="tour_type" />
+		</complexContent>
+	</complexType>
 
-    <element name="candy" type="candy-type" abstract="true"/>
+	<complexType name="cruise_tour_type">
+		<complexContent>
+			<extension base="tour_type" />
+		</complexContent>
+	</complexType>
 
-    <element name="caramel-candy" type="caramel-candy-type" substitutionGroup="candy"/>
+	<complexType name="weekend_tour_type">
+		<complexContent>
+			<extension base="tour_type">
+				<sequence>
+					<element name="excursion" type="boolean" />
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
 
-    <element name="chocolate-candy" type="chocolate-candy-type" substitutionGroup="candy"/>
+	<complexType name="pilgrimage_tour_type">
+		<complexContent>
+			<extension base="tour_type">
+				<sequence>
+					<element name="excursion" type="boolean" />
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
 
+	<element name="tour" type="tour_type" abstract="true" />
 
+	<element name="holiday" type="holiday_tour_type"
+		substitutionGroup="tour" />
 
-    <element name="ingredient">
-        <complexType>
-            <sequence>
-                <element name="ingredient-name" type="string"/>
-                <element name="weight" type="positiveInteger"/>
-            </sequence>
-        </complexType>
-    </element>
+	<element name="cruise" type="cruise_tour_type"
+		substitutionGroup="tour" />
 
-    <element name="value">
-        <complexType>
-            <sequence>
-                <element name="carbohydrates" type="int"/>
-                <element name="fats" type="int"/>
-                <element name="proteins" type="int"/>
-            </sequence>
-        </complexType>
-    </element>
+	<element name="weekend" type="weekend_tour_type"
+		substitutionGroup="tour" />
 
-    <element name="production">
-        <simpleType>
-            <restriction base="string">
-                <enumeration value="Kommunarka"/>
-                <enumeration value="Spartak"/>
-                <enumeration value="Roshen"/>
-                <enumeration value="Peter Ronnen"/>
-                <enumeration value="Konti"/>
-                <enumeration value="Rikki"/>
-                <enumeration value="Solyariki"/>
-                <enumeration value="Chupa Chups"/>
-                <enumeration value="Snickers"/>
-            </restriction>
-        </simpleType>
-    </element>
+	<element name="pilgrimage" type="pilgrimage_tour_type"
+		substitutionGroup="tour" />
 
-    <element name="chocolate-type">
-        <simpleType>
-            <restriction base="string">
-                <enumeration value="Milk"/>
-                <enumeration value="Dark"/>
-                <enumeration value="White"/>
-            </restriction>
-        </simpleType>
-    </element>
+	<element name="hotel">
+		<complexType>
+			<sequence>
+				<element ref="hotel_name" type="string" />
+				<element name="srtars_number" type="positiveInteger" />
+				<element name="rooms_count" type="integer" />
+				<element name="feed" type="boolean" />
+				<element name="tvset" type="boolean" />
+				<element name="conditioner" type="boolean" />
+			</sequence>
+		</complexType>
+	</element>
 
-    <element name="expiration-date">
-        <simpleType>
-            <restriction base="gYearMonth">
-                <pattern value="2[0-9][0-9][0-9]-(0[1-9])|(1[0-2])"/>
-            </restriction>
-        </simpleType>
-    </element>
+	<element name="hotel_name">
+		<simpleType>
+			<restriction base="string">
+				<enumeration value="Visit" />
+				<enumeration value="Voyage" />
+				<enumeration value="Bob" />
+				<enumeration value="Luxor" />
+				<enumeration value="Titanic" />
+				<enumeration value="Glory" />
+				<enumeration value="Rock" />
+				<enumeration value="Wave" />
+				<enumeration value="Aramis" />
+				<enumeration value="Artos" />
+				<enumeration value="Abracadabra" />
+				<enumeration value="Berlin" />
+				<enumeration value="Krakow" />
+				<enumeration value="Karelia" />
+				<enumeration value="Naroch" />
+				<enumeration value="Pekin" />
+				<enumeration value="Panda" />
+			</restriction>
+		</simpleType>
+	</element>
 
-    <element name="candies">
-        <complexType>
-            <sequence>
-                <element ref="candy" maxOccurs="unbounded"/>
-            </sequence>
-        </complexType>
-    </element>
+	<element name="feed_type">
+		<simpleType>
+			<restriction base="string">
+				<enumeration value="AI" />
+				<enumeration value="BB" />
+				<enumeration value="HB" />
+			</restriction>
+		</simpleType>
+	</element>
+
+	<element name="transport">
+		<simpleType>
+			<restriction base="string">
+				<enumeration value="bus" />
+				<enumeration value="plain" />
+				<enumeration value="ship" />
+			</restriction>
+		</simpleType>
+	</element>
+
+	<element name="tour_date">
+		<simpleType>
+			<restriction base="gYearMonth">
+				<pattern value="2[0-9][0-9][0-9]-(0[1-9])|(1[0-2])" />
+			</restriction>
+		</simpleType>
+	</element>
+
+	<element name="tour">
+		<complexType>
+			<sequence>
+				<element ref="tour" maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
 </schema>
