@@ -2,6 +2,8 @@ package com.epam.jwd.task2.exception;
 
 public class CustomParseXMLException extends Exception {
     
+	private static final long serialVersionUID = 1L;
+
 	public CustomParseXMLException() {
         super();
     }
