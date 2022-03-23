@@ -16,13 +16,13 @@ public class ReferenceTouristVouchers {
 
 	public static List<AbstractTour> getTourList() {
 
-		AbstractTour tour = new Holiday.HolidayBuilder().withCompany("Dream").withCountry("Turkey")
+		AbstractTour tour = new Holiday.HolidayBuilder().withID("T1").withCompany("Dream").withAdvertisement(null).withCountry("Turkey")
 				.withTourDate(YearMonth.of(2022, 06)).withDaysNumber(10).withStrasrNumber(2).withTransport("plain")
 				.withCost(1300).build();
 
 		tourList.add(tour);
 
-		tour = new Weekend.WeekendBuilder().withCompany("Dream").withCountry("Turkey")
+	/*	tour = new Weekend.WeekendBuilder().withCompany("Dream").withCountry("Turkey")
 				.withTourDate(YearMonth.of(2022, 06)).withDaysNumber(10).withStrasrNumber(2).withTransport("plain")
 				.withCost(1300).build();;
 
@@ -37,7 +37,7 @@ public class ReferenceTouristVouchers {
 				.withCost(1300).build();;
 
 		tourList.add(tour);
-
+*/
 		return tourList;
 	}
 

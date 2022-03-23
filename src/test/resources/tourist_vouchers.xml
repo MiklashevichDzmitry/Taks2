@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="tourist_vouchers.xsd">
 
-	<holiday tour_code="T1">
+<holiday tour_code="T1">
 		<company>Dream</company>
 		<country>Turkey</country>
 		<tour_date>2022-06</tour_date>

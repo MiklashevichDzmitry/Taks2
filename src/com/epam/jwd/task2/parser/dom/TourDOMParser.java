@@ -11,6 +11,7 @@ import org.xml.sax.SAXException;
 
 import com.epam.jwd.task2.entity.AbstractTour;
 import com.epam.jwd.task2.entity.Cruise;
+import com.epam.jwd.task2.entity.Holiday;
 import com.epam.jwd.task2.entity.Pilgrimage;
 import com.epam.jwd.task2.entity.TouristVouchers;
 import com.epam.jwd.task2.entity.Weekend;
@@ -34,7 +35,7 @@ public class TourDOMParser {
 		try {
 			docBuilder = factory.newDocumentBuilder();
 		} catch (ParserConfigurationException e) {
-			LOGGER.log(Level.ERROR, "Ошибка конфигурации парсера: " + e);
+			LOGGER.log(Level.ERROR, "configuration parser error: " + e);
 		}
 	}
 
@@ -86,7 +87,7 @@ public class TourDOMParser {
 	}
 
 	private AbstractTour buildHoliday(Element element) {
-		AbstractTour tour = new Cruise();
+		AbstractTour tour = new Holiday();
 		tourInit(tour, element);
 
 		return tour;
@@ -109,11 +110,15 @@ public class TourDOMParser {
 
 	private void tourInit(AbstractTour tour, Element element) {
 		tour.setTourCode(element.getAttribute(XmlTourTags.TOURCODE.getName()));
+		if (element.hasAttribute("advertisement")) {
+			tour.setAdvertisement(element.getAttribute(XmlTourTags.ADVERTISEMENT.getName()));
+		}
 		tour.setCompany(getElementTextContent(element, XmlTourTags.COMPANY.getName()));
 		tour.setTourDate(getElementYearMonthContent(element, XmlTourTags.TOURDATE.getName()));
 		tour.setCost(Integer.parseInt(getElementTextContent(element, XmlTourTags.COST.getName())));
 		tour.setTransport(getElementTextContent(element, XmlTourTags.TRANSPORT.getName()));
 		tour.setStarsNumber(Integer.parseInt(getElementTextContent(element, XmlTourTags.STARSNUMBER.getName())));
+		tour.setDaysNumber(Integer.parseInt(getElementTextContent(element, XmlTourTags.DAYSNUMBER.getName())));
 	}
 
 	private static String getElementTextContent(Element element, String elementName) {
@@ -126,7 +131,5 @@ public class TourDOMParser {
 		String yearMonthString = getElementTextContent(element, tagName);
 		return YearMonth.parse(yearMonthString);
 	}
-
-
 
 }

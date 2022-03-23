@@ -113,7 +113,11 @@ public abstract class AbstractTour implements Serializable {
 			return false;
 		}
 		
-		return cost == tour.cost && tourCode.equals(tour.tourCode) && advertisement.equals(tour.advertisement)
+		if (tour.advertisement == null ? advertisement != null : !(tour.advertisement.equals(advertisement))) {
+			return false;
+		}
+		
+		return cost == tour.cost && tourCode.equals(tour.tourCode) && advertisement == tour.advertisement
 				&& company.equals(tour.company) && transport == tour.transport && country == tour.country && daysNumber == tour.daysNumber;
 
 	}
@@ -123,9 +127,9 @@ public abstract class AbstractTour implements Serializable {
 
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + tourCode.hashCode();
-		result = prime * result + country.hashCode();
-		result = prime * result + advertisement.hashCode();
+		result = prime * result + (tourCode == null ? 0 : tourDate.hashCode());
+		result = prime * result + (country == null ? 0 : tourDate.hashCode());
+		result = prime * result + (advertisement == null ? 0 : tourDate.hashCode());
 		result = prime * result + company.hashCode();
 		result = prime * result + (tourDate == null ? 0 : tourDate.hashCode());
 		result = prime * result + cost;
